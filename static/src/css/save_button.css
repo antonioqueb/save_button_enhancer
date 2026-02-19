@@ -8,108 +8,93 @@
 .o_form_buttons_edit .o_form_button_save,
 button.o_form_button_save {
     font-size: 1rem !important;
-    padding: 8px 18px !important;
+    padding: 6px 14px !important;
     font-weight: 600 !important;
 }
 
-/* -------------------------------------------------------
-   Ícono de nube (fa-cloud-upload / fa-floppy-disk)
-   en el área de dirty state (cambios sin guardar)
-   ------------------------------------------------------- */
-
-/* Odoo 19 usa .o_dirty_warning o el ícono dentro del breadcrumb/control panel */
+/* Ícono de nube en el área de dirty state */
 .o_dirty_warning,
 .o_cp_buttons .o_dirty_warning {
     font-size: 1rem !important;
-    color: #e6a817 !important;
+    color: #6c757d !important;
     opacity: 1 !important;
     display: inline-flex !important;
     align-items: center !important;
     gap: 6px !important;
-    background: rgba(230, 168, 23, 0.12) !important;
-    border-radius: 8px !important;
-    padding: 4px 10px !important;
+    background: transparent !important;
+    border: none !important;
+    padding: 4px 6px !important;
 }
 
-/* El ícono fa dentro del dirty warning */
 .o_dirty_warning .fa,
 .o_dirty_warning i {
     font-size: 1rem !important;
-    color: #e6a817 !important;
+    color: #6c757d !important;
 }
 
-/* -------------------------------------------------------
-   Botón de guardar principal cuando hay cambios pendientes
-   (aplica en Form view, List view editable, etc.)
-   ------------------------------------------------------- */
+/* Botón de guardar principal */
 .o_control_panel .o_form_button_save,
 .o_form_view .o_form_button_save,
 .o_list_view .o_list_button_save {
-    color: #fff !important;
+    background: transparent !important;
+    border: none !important;
+    color: #6c757d !important;
     font-size: 1rem !important;
-    padding: 8px 22px !important;
-    border-radius: 8px !important;
-    font-weight: 700 !important;
-    box-shadow: 0 2px 8px rgba(230, 168, 23, 0.35) !important;
-    transition: background-color 0.2s, box-shadow 0.2s !important;
+    padding: 6px 14px !important;
+    border-radius: 6px !important;
+    font-weight: 600 !important;
+    box-shadow: none !important;
+    transition: color 0.2s !important;
 }
 
+.o_control_panel .o_form_button_save:hover,
+.o_form_view .o_form_button_save:hover,
+.o_list_view .o_list_button_save:hover {
+    color: #495057 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
 
-
-/* -------------------------------------------------------
-   Ícono de disquete personalizado dentro del botón guardar
-   (reemplaza visualmente el ícono existente)
-   ------------------------------------------------------- */
+/* Ícono de disquete */
 .o_form_button_save .fa-cloud-upload::before,
 .o_form_button_save .fa-floppy-o::before,
 .o_form_button_save .fa-save::before {
-    content: "\f0c7" !important; /* fa-floppy-o (disquete) */
+    content: "\f0c7" !important;
     font-size: 1.2em !important;
     margin-right: 4px !important;
 }
 
-/* -------------------------------------------------------
-   Indicador de cambios pendientes en el título/breadcrumb
-   ------------------------------------------------------- */
+/* Indicador en breadcrumb */
 .o_form_dirty .breadcrumb-item.active::after,
 .o_form_dirty .o_form_status_indicator {
-    color: #e6a817 !important;
+    color: #6c757d !important;
 }
 
-/* -------------------------------------------------------
-   Status indicator bar (dirty state icon en top bar)
-   ------------------------------------------------------- */
+/* Status indicator */
 .o_form_status_indicator .fa {
-    font-size: 1.4rem !important;
-    color: #e6a817 !important;
+    font-size: 1.3rem !important;
+    color: #6c757d !important;
 }
 
 .o_form_status_indicator button {
     font-size: 1rem !important;
     background: transparent !important;
-    color: #e6a817 !important;
-    border: 1.5px solid #e6a817 !important;
-    border-radius: 8px !important;
-    padding: 5px 14px !important;
+    color: #6c757d !important;
+    border: none !important;
+    border-radius: 6px !important;
+    padding: 5px 12px !important;
     font-weight: 600 !important;
-    transition: all 0.2s !important;
+    box-shadow: none !important;
+    transition: color 0.2s !important;
 }
 
 .o_form_status_indicator button:hover {
-    color: #fff !important;
+    color: #495057 !important;
+    background: transparent !important;
 }
 
-/* -------------------------------------------------------
-   Animación suave de pulso para llamar la atención
-   cuando hay cambios sin guardar
-   ------------------------------------------------------- */
-@keyframes save-pulse {
-    0%   { box-shadow: 0 0 0 0 rgba(230, 168, 23, 0.5); }
-    70%  { box-shadow: 0 0 0 8px rgba(230, 168, 23, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(230, 168, 23, 0); }
-}
-
+/* Sin animación de pulso */
 .o_form_status_indicator button,
 .o_control_panel .o_form_button_save {
-    animation: save-pulse 2s infinite !important;
+    animation: none !important;
 }
