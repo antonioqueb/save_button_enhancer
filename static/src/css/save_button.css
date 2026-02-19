@@ -7,7 +7,7 @@
 .o_form_button_save,
 .o_form_buttons_edit .o_form_button_save,
 button.o_form_button_save {
-    font-size: 1rem !important;
+    font-size: 1.4rem !important;
     padding: 6px 14px !important;
     font-weight: 600 !important;
 }
@@ -15,7 +15,7 @@ button.o_form_button_save {
 /* Ícono de nube en el área de dirty state */
 .o_dirty_warning,
 .o_cp_buttons .o_dirty_warning {
-    font-size: 1rem !important;
+    font-size: 1.4rem !important;
     color: #6c757d !important;
     opacity: 1 !important;
     display: inline-flex !important;
@@ -28,7 +28,7 @@ button.o_form_button_save {
 
 .o_dirty_warning .fa,
 .o_dirty_warning i {
-    font-size: 1rem !important;
+    font-size: 1.4rem !important;
     color: #6c757d !important;
 }
 
@@ -39,7 +39,7 @@ button.o_form_button_save {
     background: transparent !important;
     border: none !important;
     color: #6c757d !important;
-    font-size: 1rem !important;
+    font-size: 1.4rem !important;
     padding: 6px 14px !important;
     border-radius: 6px !important;
     font-weight: 600 !important;
@@ -77,7 +77,7 @@ button.o_form_button_save {
 }
 
 .o_form_status_indicator button {
-    font-size: 1rem !important;
+    font-size: 1.4rem !important;
     background: transparent !important;
     color: #6c757d !important;
     border: none !important;
