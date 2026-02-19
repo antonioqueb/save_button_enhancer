@@ -20,7 +20,7 @@ button.o_form_button_save {
 /* Odoo 19 usa .o_dirty_warning o el ícono dentro del breadcrumb/control panel */
 .o_dirty_warning,
 .o_cp_buttons .o_dirty_warning {
-    font-size: 1.6rem !important;
+    font-size: 1rem !important;
     color: #e6a817 !important;
     opacity: 1 !important;
     display: inline-flex !important;
@@ -29,13 +29,12 @@ button.o_form_button_save {
     background: rgba(230, 168, 23, 0.12) !important;
     border-radius: 8px !important;
     padding: 4px 10px !important;
-    border: 1.5px solid #e6a817 !important;
 }
 
 /* El ícono fa dentro del dirty warning */
 .o_dirty_warning .fa,
 .o_dirty_warning i {
-    font-size: 1.6rem !important;
+    font-size: 1rem !important;
     color: #e6a817 !important;
 }
 
@@ -46,7 +45,6 @@ button.o_form_button_save {
 .o_control_panel .o_form_button_save,
 .o_form_view .o_form_button_save,
 .o_list_view .o_list_button_save {
-    border-color: #c8910e !important;
     color: #fff !important;
     font-size: 1rem !important;
     padding: 8px 22px !important;
@@ -56,11 +54,7 @@ button.o_form_button_save {
     transition: background-color 0.2s, box-shadow 0.2s !important;
 }
 
-.o_control_panel .o_form_button_save:hover,
-.o_form_view .o_form_button_save:hover,
-.o_list_view .o_list_button_save:hover {
-    box-shadow: 0 4px 12px rgba(230, 168, 23, 0.5) !important;
-}
+
 
 /* -------------------------------------------------------
    Ícono de disquete personalizado dentro del botón guardar
