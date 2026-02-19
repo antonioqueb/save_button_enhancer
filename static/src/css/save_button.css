@@ -46,7 +46,6 @@ button.o_form_button_save {
 .o_control_panel .o_form_button_save,
 .o_form_view .o_form_button_save,
 .o_list_view .o_list_button_save {
-    background-color: #e6a817 !important;
     border-color: #c8910e !important;
     color: #fff !important;
     font-size: 1rem !important;
@@ -60,7 +59,6 @@ button.o_form_button_save {
 .o_control_panel .o_form_button_save:hover,
 .o_form_view .o_form_button_save:hover,
 .o_list_view .o_list_button_save:hover {
-    background-color: #c8910e !important;
     box-shadow: 0 4px 12px rgba(230, 168, 23, 0.5) !important;
 }
 
@@ -104,7 +102,6 @@ button.o_form_button_save {
 }
 
 .o_form_status_indicator button:hover {
-    background: #e6a817 !important;
     color: #fff !important;
 }
 
