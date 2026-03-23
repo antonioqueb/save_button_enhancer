@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Save Button Enhancer',
-    'version': '19.0.1.0.0',
-    'summary': 'Reemplaza los controles de guardar y descartar por botones de texto',
+    'version': '19.0.1.0.1',
+    'summary': 'Reemplaza los iconos de guardar y descartar por botones de texto',
     'category': 'Technical',
     'author': 'Alphaqueb Consulting SAS',
     'license': 'LGPL-3',

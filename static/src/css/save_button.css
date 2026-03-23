@@ -1,26 +1,29 @@
 .o_form_status_indicator {
     display: flex;
     align-items: center;
+    gap: 6px;
+}
+
+.o_form_status_indicator .o_form_status_indicator_buttons {
+    display: flex;
+    align-items: center;
     gap: 8px;
 }
 
 .o_form_status_indicator .o_form_button_save,
 .o_form_status_indicator .o_form_button_cancel {
-    min-height: 36px;
-    padding: 0.45rem 0.95rem;
+    min-height: 34px;
     border-radius: 0.5rem;
     font-weight: 600;
-    line-height: 1.2;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
     box-shadow: none;
 }
 
-/* Asegura que no aparezcan íconos heredados */
-.o_form_status_indicator .o_form_button_save i,
-.o_form_status_indicator .o_form_button_cancel i,
-.o_form_status_indicator .o_form_button_save .fa,
-.o_form_status_indicator .o_form_button_cancel .fa {
-    display: none !important;
+.o_form_status_indicator .o_form_button_save span,
+.o_form_status_indicator .o_form_button_cancel span {
+    display: inline-block;
+    line-height: 1.2;
 }
