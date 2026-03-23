@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="save_button_enhancer.FormStatusIndicator"
+       t-inherit="web.FormStatusIndicator"
+       t-inherit-mode="extension">
+
+        <!-- Reemplazar botón Guardar -->
+        <xpath expr="//button[hasclass('o_form_button_save')]" position="replace">
+            <button type="button"
+                    class="o_form_button_save btn btn-primary"
+                    t-att-disabled="props.isDisabled"
+                    data-hotkey="s"
+                    t-on-click.stop="save"
+                    data-tooltip="Guardar cambios"
+                    aria-label="Guardar cambios">
+                Guardar
+            </button>
+        </xpath>
+
+        <!-- Reemplazar botón Descartar -->
+        <xpath expr="//button[hasclass('o_form_button_cancel')]" position="replace">
+            <button type="button"
+                    class="o_form_button_cancel btn btn-outline-secondary"
+                    t-on-click.stop="discard"
+                    data-tooltip="Descartar cambios"
+                    aria-label="Descartar cambios">
+                Descartar
+            </button>
+        </xpath>
+
+    </t>
+
+</templates>

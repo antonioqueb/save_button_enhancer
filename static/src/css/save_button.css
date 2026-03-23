@@ -1,100 +1,26 @@
-/* ============================================================
-   Save Button Enhancer - Odoo 19
-   Hace el botón de guardar (nube/disquete) más grande y visible
-   ============================================================ */
-
-/* Contenedor del botón de guardar en la barra de control */
-.o_form_button_save,
-.o_form_buttons_edit .o_form_button_save,
-button.o_form_button_save {
-    font-size: 1.4rem !important;
-    padding: 6px 14px !important;
-    font-weight: 600 !important;
+.o_form_status_indicator {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
-/* Ícono de nube en el área de dirty state */
-.o_dirty_warning,
-.o_cp_buttons .o_dirty_warning {
-    font-size: 1.4rem !important;
-    color: #6c757d !important;
-    opacity: 1 !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    gap: 6px !important;
-    background: transparent !important;
-    border: none !important;
-    padding: 4px 6px !important;
+.o_form_status_indicator .o_form_button_save,
+.o_form_status_indicator .o_form_button_cancel {
+    min-height: 36px;
+    padding: 0.45rem 0.95rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
 }
 
-.o_dirty_warning .fa,
-.o_dirty_warning i {
-    font-size: 1.4rem !important;
-    color: #6c757d !important;
-}
-
-/* Botón de guardar principal */
-.o_control_panel .o_form_button_save,
-.o_form_view .o_form_button_save,
-.o_list_view .o_list_button_save {
-    background: transparent !important;
-    border: none !important;
-    color: #6c757d !important;
-    font-size: 1.4rem !important;
-    padding: 6px 14px !important;
-    border-radius: 6px !important;
-    font-weight: 600 !important;
-    box-shadow: none !important;
-    transition: color 0.2s !important;
-}
-
-.o_control_panel .o_form_button_save:hover,
-.o_form_view .o_form_button_save:hover,
-.o_list_view .o_list_button_save:hover {
-    color: #495057 !important;
-    background: transparent !important;
-    box-shadow: none !important;
-}
-
-/* Ícono de disquete */
-.o_form_button_save .fa-cloud-upload::before,
-.o_form_button_save .fa-floppy-o::before,
-.o_form_button_save .fa-save::before {
-    content: "\f0c7" !important;
-    font-size: 1.2em !important;
-    margin-right: 4px !important;
-}
-
-/* Indicador en breadcrumb */
-.o_form_dirty .breadcrumb-item.active::after,
-.o_form_dirty .o_form_status_indicator {
-    color: #6c757d !important;
-}
-
-/* Status indicator */
-.o_form_status_indicator .fa {
-    font-size: 1.3rem !important;
-    color: #6c757d !important;
-}
-
-.o_form_status_indicator button {
-    font-size: 1.4rem !important;
-    background: transparent !important;
-    color: #6c757d !important;
-    border: none !important;
-    border-radius: 6px !important;
-    padding: 5px 12px !important;
-    font-weight: 600 !important;
-    box-shadow: none !important;
-    transition: color 0.2s !important;
-}
-
-.o_form_status_indicator button:hover {
-    color: #495057 !important;
-    background: transparent !important;
-}
-
-/* Sin animación de pulso */
-.o_form_status_indicator button,
-.o_control_panel .o_form_button_save {
-    animation: none !important;
+/* Asegura que no aparezcan íconos heredados */
+.o_form_status_indicator .o_form_button_save i,
+.o_form_status_indicator .o_form_button_cancel i,
+.o_form_status_indicator .o_form_button_save .fa,
+.o_form_status_indicator .o_form_button_cancel .fa {
+    display: none !important;
 }
