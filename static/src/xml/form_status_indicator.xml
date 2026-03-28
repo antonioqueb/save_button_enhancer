@@ -1,32 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates xml:space="preserve">
-
-    <t t-name="save_button_enhancer.FormStatusIndicator"
+<t t-name="save_button_enhancer.FormStatusIndicator"
        t-inherit="web.FormStatusIndicator"
        t-inherit-mode="extension">
-
-        <!-- Guardar: conservar el botón original y su t-ref="save" -->
-        <xpath expr="//button[hasclass('o_form_button_save')]" position="attributes">
-            <attribute name="class">o_form_button_save btn btn-primary px-3 py-1 lh-sm</attribute>
-            <attribute name="data-tooltip">Guardar cambios</attribute>
-            <attribute name="aria-label">Guardar cambios</attribute>
-        </xpath>
-
-        <xpath expr="//button[hasclass('o_form_button_save')]/i" position="replace">
-            <span>Guardar</span>
-        </xpath>
-
-        <!-- Descartar -->
-        <xpath expr="//button[hasclass('o_form_button_cancel')]" position="attributes">
-            <attribute name="class">o_form_button_cancel btn btn-outline-secondary px-3 py-1 lh-sm ms-2</attribute>
-            <attribute name="data-tooltip">Descartar cambios</attribute>
-            <attribute name="aria-label">Descartar cambios</attribute>
-        </xpath>
-
-        <xpath expr="//button[hasclass('o_form_button_cancel')]/i" position="replace">
-            <span>Descartar</span>
-        </xpath>
-
-    </t>
-
+<!-- Guardar -->
+<xpath expr="//button[hasclass('o_form_button_save')]" position="attributes">
+<attribute name="class">o_form_button_save btn btn-primary px-2 py-0 lh-sm</attribute>
+<attribute name="data-tooltip">Guardar cambios</attribute>
+<attribute name="aria-label">Guardar cambios</attribute>
+</xpath>
+<xpath expr="//button[hasclass('o_form_button_save')]/i" position="replace">
+<span>Guardar</span>
+</xpath>
+<!-- Descartar -->
+<xpath expr="//button[hasclass('o_form_button_cancel')]" position="attributes">
+<attribute name="class">o_form_button_cancel btn btn-outline-secondary px-2 py-0 lh-sm ms-1</attribute>
+<attribute name="data-tooltip">Descartar cambios</attribute>
+<attribute name="aria-label">Descartar cambios</attribute>
+</xpath>
+<xpath expr="//button[hasclass('o_form_button_cancel')]/i" position="replace">
+<span>Descartar</span>
+</xpath>
+</t>
 </templates>
