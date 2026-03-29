@@ -13,11 +13,11 @@
 .o_form_status_indicator .o_form_button_save,
 .o_form_status_indicator .o_form_button_cancel {
     min-height: unset !important;
-    height: 26px;
-    border-radius: 0.375rem;
-    font-size: 0.75rem;
+    height: 18px;
+    border-radius: 0.26rem;
+    font-size: 0.525rem;
     font-weight: 600;
-    padding: 2px 10px !important;
+    padding: 1px 7px !important;
     display: inline-flex;
     align-items: center;
     justify-content: center;
